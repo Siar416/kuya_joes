@@ -1,0 +1,23 @@
+.container {
+    background-color: var(--lightGray);
+    display: flex;
+    justify-content: space-between;
+    height: 3rem;
+    align-items: center;
+    padding: 1rem;
+}
+
+.logo {
+    font-weight: 500;
+}
+
+.nav-items {
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+    list-style-type: none;
+}
+
+.menu-icon {
+    font-size: 1.5rem;
+}

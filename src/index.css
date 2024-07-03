@@ -9,6 +9,9 @@
 body {
   line-height: 1.5;
   -webkit-font-smoothing: antialiased;
+  color: var(--black);
+  font-family: "Poppins";
+  font-size: .9375rem;
 }
 
 img, picture, video, canvas, svg {
@@ -26,4 +29,9 @@ p, h1, h2, h3, h4, h5, h6 {
 
 #root, #__next {
   isolation: isolate;
+}
+
+:root {
+  --lightGray: #f0f0f0;
+  --black: #28282B;
 }
