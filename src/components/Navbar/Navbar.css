@@ -4,23 +4,26 @@
     height: 3rem;
     align-items: center;
     padding: 1rem;
+    position: relative;
 }
 
 .nav-wrapper {
     display: flex;
     justify-content: space-between;
     width: 100%;
-    position: relative;
 }
 
 .logo {
     font-weight: 500;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
 }
 
 .nav-container {
-    background-color: #f1e3a4;
     position: absolute;
-    top: 35px;
+    top: 48px;
+    left: 0px;
     width: 100%;
     height: calc(100vh - 48px);
     display: flex;
@@ -28,10 +31,10 @@
     align-items: center;
 }
 
+
 .nav-items {
     display: flex;
     flex-direction: column;
-    gap: 2rem;
     list-style-type: none;
     align-items: center;
     gap: 5rem;
@@ -40,5 +43,9 @@
 
 
 .menu-icon {
-    font-size: 1.5rem;
+    font-size: 1rem;
+}
+
+.close-icon {
+    font-size: 1rem;
 }

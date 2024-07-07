@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import "./Navbar.css";
 import { FiMenu } from "react-icons/fi";
+import { FiX } from "react-icons/fi";
 
 const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -14,6 +15,13 @@ const Navbar = () => {
       <section className="nav-wrapper">
         <div className="logo">
           <p>Kuya Joe's Kitchen</p>
+          {menuOpen ? (
+            <div className="close-icons" onClick={handleClick}>
+              <FiX />
+            </div>
+          ) : (
+            ""
+          )}
         </div>
         {menuOpen ? (
           <div className="nav-container">
