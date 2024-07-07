@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import "./Navbar.css";
 import { FiMenu } from "react-icons/fi";
 import { FiX } from "react-icons/fi";
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -27,9 +28,18 @@ const Navbar = () => {
           <div className="nav-container">
             <div className="nav">
               <ul className="nav-items">
-                <li>Menu</li>
+                {/* <li>Menu</li>
                 <li>About</li>
-                <li>Contact Us</li>
+                <li>Contact Us</li> */}
+                <Link to="/menu" className="link">
+                  Menu
+                </Link>
+                <Link to="/about" className="link">
+                  About
+                </Link>
+                <Link to="/contact" className="link">
+                  Contact Us
+                </Link>
               </ul>
             </div>
           </div>
